@@ -16,7 +16,7 @@ private:
 	bool mAnimating; // stops player from moving if player gets killed etc.
 
 	int mScore;
-	int mLives;
+	int mLives; 
 
 	Texture* mShip;
 
