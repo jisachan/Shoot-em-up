@@ -5,6 +5,13 @@
 #include "MathHelper.h"
 #include "Projectile.h"
 
+struct Bounds {
+	float left, right, up, down;
+
+	Bounds() : left(0), right(0), up(0), down(0) {}
+	Bounds(float left, float right, float up, float down) : left(left), right(right), up(up), down(down) { }
+};
+
 class Player : public GameEntity {
 
 private:
@@ -21,7 +28,9 @@ private:
 	Texture* mShip;
 
 	float mMoveSpeed;
-	Vector2D mMoveBounds;
+	Bounds mMoveBounds;
+	Vector2D mMoveBoundsX;
+	Vector2D mMoveBoundsY;
 
 	static const int MAX_PROJECTILES = 15;
 	Projectile* mProjectiles[MAX_PROJECTILES];
