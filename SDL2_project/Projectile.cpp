@@ -3,13 +3,15 @@
 Projectile::Projectile() {
 	mTimer = Timer::Instance();
 
-	mSpeed = 600.0f;
+	mSpeed = 800.0f;
 
 	mTexture = new Texture("Projectiley.png");
 	mTexture->SetParent(this);
 	mTexture->SetScale(VECTOR2D_ONE * 0.1);
 	mTexture->SetPos(VECTOR2D_ZERO);
 
+	//rotation example
+	Rotate(45);
 
 	Reload();
 }

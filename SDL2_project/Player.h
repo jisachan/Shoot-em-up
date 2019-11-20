@@ -14,7 +14,7 @@ private:
 
 	bool mVisible; //true if player is visible on screen. will use to switch player on and off
 	bool mAnimating; // stops player from moving if player gets killed etc.
-
+	
 	int mScore;
 	int mLives; 
 

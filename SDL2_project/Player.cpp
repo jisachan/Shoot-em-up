@@ -16,8 +16,8 @@ Player::Player() {
 
 	mMoveSpeed = 200.0f;
 	//set the bounds for player movement.
-	//player can move between 0 on the x and up to 800.
-	mMoveBounds = Vector2D(44.0f, 800.0f);
+	//player can move between 0 on the x and up to 900.
+	mMoveBounds = Vector2D(44.0f, 900.0f);
 
 	for (int i = 0; i < MAX_PROJECTILES; i++)
 	{
